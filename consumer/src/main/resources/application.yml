@@ -12,5 +12,6 @@ dubbo:
     name: dubbo
   registry:
     id: my-registry
-    address: zookeeper://127.0.0.1:2181
+    address: 127.0.0.1:2181
     client: curator
+    protocol: zookeeper
