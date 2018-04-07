@@ -15,7 +15,7 @@ public class HelloServiceImpl implements HelloService {
     private static final Logger LOGGER=LoggerFactory.getLogger(HelloServiceImpl.class);
     @Override
     public String hello(String name) {
-        LOGGER.info("接受到参数:"+name);
+        LOGGER.info("接收到参数:"+name);
         return "Hello, " + name;
     }
 }

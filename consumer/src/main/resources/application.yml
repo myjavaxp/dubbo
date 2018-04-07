@@ -15,3 +15,5 @@ dubbo:
     address: 127.0.0.1:2181
     client: curator
     protocol: zookeeper
+    check: true
+    timeout: 60000
