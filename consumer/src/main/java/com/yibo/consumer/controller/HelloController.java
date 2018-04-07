@@ -8,9 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-    @Reference(version = "2.1",
-            application = "${dubbo.application.id}",
-            group = "1")
+    @Reference
     private HelloService helloService;
 
     @GetMapping("/hello/{name}")
