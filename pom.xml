@@ -11,6 +11,7 @@
         <module>provider</module>
         <module>consumer</module>
         <module>api</module>
+        <module>anotherprovider</module>
     </modules>
     <packaging>pom</packaging>
     <name>dubbo</name>
