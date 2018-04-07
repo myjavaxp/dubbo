@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @Reference(version = "2.1",
             application = "${dubbo.application.id}",
-            url = "dubbo://localhost:20880")
+            group = "1")
     private HelloService helloService;
 
     @GetMapping("/hello/{name}")

@@ -9,7 +9,9 @@ import org.slf4j.LoggerFactory;
         version = "2.1",
         application = "${dubbo.application.id}",
         protocol = "${dubbo.protocol.id}",
-        registry = "${dubbo.registry.id}"
+        registry = "${dubbo.registry.id}",
+        group = "1",
+        retries = 2
 )
 public class HelloServiceImpl implements HelloService {
     private static final Logger LOGGER=LoggerFactory.getLogger(HelloServiceImpl.class);
