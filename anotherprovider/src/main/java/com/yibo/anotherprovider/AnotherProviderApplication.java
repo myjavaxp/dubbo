@@ -6,6 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class AnotherProviderApplication {
     public static void main(String[] args) {
-        SpringApplication.run(AnotherProviderApplication.class,args);
+        SpringApplication.run(AnotherProviderApplication.class, args);
     }
 }
