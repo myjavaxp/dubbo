@@ -25,7 +25,7 @@
     <properties>
         <curator.version>4.0.1</curator.version>
         <dubbo.version>2.6.1</dubbo.version>
-        <dubbo-boot.version>0.1.0</dubbo-boot.version>
+        <dubbo-starter.version>0.1.0</dubbo-starter.version>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -42,7 +42,7 @@
             <dependency>
                 <groupId>com.alibaba.boot</groupId>
                 <artifactId>dubbo-spring-boot-starter</artifactId>
-                <version>${dubbo-boot.version}</version>
+                <version>${dubbo-starter.version}</version>
             </dependency>
 
             <dependency>
