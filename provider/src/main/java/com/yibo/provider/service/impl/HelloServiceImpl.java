@@ -4,7 +4,8 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.yibo.provider.service.HelloService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-@Service
+
+@Service(version = "1.0")
 public class HelloServiceImpl implements HelloService {
     private static final Logger LOGGER = LoggerFactory.getLogger(HelloServiceImpl.class);
 

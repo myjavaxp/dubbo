@@ -12,9 +12,9 @@ import java.util.Map;
 
 @RestController
 public class HelloController {
-    @Reference
+    @Reference(version = "*")
     private HelloService helloService;
-    @Reference
+    @Reference(stub = "com.yibo.consumer.stub.HiServiceImpl")
     private HiService hiService;
 
     @GetMapping("/hello/{name}")
