@@ -7,6 +7,9 @@ import com.yibo.provider.service.HelloService;
 public class AnotherHelloService implements HelloService {
     @Override
     public String hello(String name) {
+        if(Math.random()<0.5){
+            throw new RuntimeException();
+        }
         return "Another: Hello " + name;
     }
 }

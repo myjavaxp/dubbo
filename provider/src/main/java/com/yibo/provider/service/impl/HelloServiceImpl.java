@@ -12,6 +12,9 @@ public class HelloServiceImpl implements HelloService {
     @Override
     public String hello(String name) {
         LOGGER.info("接收到参数:" + name);
+        if(Math.random()<0.5){
+            throw new RuntimeException();
+        }
         return "Hello, " + name;
     }
 }
