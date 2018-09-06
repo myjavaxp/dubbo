@@ -19,3 +19,5 @@ dubbo:
     timeout: 60000
   monitor:
     protocol: registry
+  consumer:
+    timeout: 30000
