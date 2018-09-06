@@ -5,7 +5,7 @@ import com.yibo.provider.service.HiService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Service(protocol = "${dubbo.protocol.id}")
+@Service
 public class HiServiceImpl implements HiService {
     private static final Logger LOGGER = LoggerFactory.getLogger(HiServiceImpl.class);
 
