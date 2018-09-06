@@ -10,8 +10,8 @@ dubbo:
     id: dubbo-provider
     name: dubbo-provider
   protocol:
-    id: dubbo
     name: dubbo
+    port: 20880
   registry:
     id: my-registry
     address: 127.0.0.1:2181
@@ -19,3 +19,6 @@ dubbo:
     protocol: zookeeper
     check: true
     timeout: 60000
+  #对简易监控中心有用
+  monitor:
+    protocol: registry

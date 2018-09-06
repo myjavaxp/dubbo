@@ -3,12 +3,6 @@ spring:
     name: another-provider
 server:
   port: 9091
-management:
-  health:
-    dubbo:
-      status:
-        defaults: memory
-        extras: load,threadpool
 dubbo:
   scan:
     base-packages: com.yibo.anotherprovider.service
@@ -29,6 +23,5 @@ dubbo:
     protocol: zookeeper
     check: true
     timeout: 60000
-endpoints:
-  dubbo:
-    enabled: true
+  monitor:
+    protocol: registry

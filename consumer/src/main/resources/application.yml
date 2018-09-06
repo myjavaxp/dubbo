@@ -2,7 +2,7 @@ spring:
   application:
     name: dubbo-consumer
 server:
-  port: 8080
+  port: 8081
 dubbo:
   application:
     id: dubbo-consumer
@@ -17,3 +17,5 @@ dubbo:
     protocol: zookeeper
     check: true
     timeout: 60000
+  monitor:
+    protocol: registry
